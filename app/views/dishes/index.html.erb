@@ -1,17 +1,11 @@
-<h1>Dishes#indezzzzzzzz</h1>
+<!-- <h1>Dishes#indezzzzzzzz</h1>
 <p>Find me in app/views/dishes/index.html.erb</p>
 
-<%= image_tag "lucien.jpg", width:"300px", id: "logo" %>
+ -->
+ <div class="wrapper">
+      <div class="lead">
 
-
-<h1>dishes</h1>
-<ul>
-  <% @dishes.each do |dish| %>
-    <li><%= link_to dish.name, dish_path(dish) %></li>
-  <% end %>
-</ul>
-
-<div class="container text-center">
+        <div class="container text-center">
   <div class="container-fluid">
   <div class="row">
     <div class="col-xs-offset-3 col-xs-6 ">
@@ -119,5 +113,26 @@ $(document).ready(function(){
 
 
 <h3><%= link_to "Pré-commander", order_path(:id) %></h3>
+
+
+
+
+        <p>
+          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#orderForm">
+            Pré-commander
+          </button>
+        </p>
+      </div>
+    </div>
+
+<%= image_tag ".jpg", width:"300px", id: "logo" %>
+
+
+<h1>dishes</h1>
+<ul>
+  <% @dishes.each do |dish| %>
+    <li><%= link_to dish.name, dish_path(dish) %></li>
+  <% end %>
+</ul>
 
 

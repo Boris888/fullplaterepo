@@ -23,3 +23,13 @@
 .bg-facebook {
   background: #3b5998;
 }
+
+.wrapper {
+  // background-image: url('app/assets/images/lucien.jpg');
+  background-image: image-url("lucien.jpg");
+  height: 650px;
+  background-size: cover;
+  padding-top: 150px;
+  text-align: center;
+  color: white;
+}
