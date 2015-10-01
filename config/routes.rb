@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  get 'brouillons/un'
+  get 'brouillons/un' => 'brouillons#un'
 
-  get 'brouillons/deux'
+  get 'brouillons/deux' => 'brouillons#deux'
 
-  get 'brouillons/trois'
+  get 'brouillons/trois' => 'brouillons#trois'
 
-  get 'brouillons/quatre'
+  get 'brouillons/quatre' => 'brouillons#quatre'
+
+  # get 'chats/index' => 'chats#index'
 
   get 'payments/new'
 
