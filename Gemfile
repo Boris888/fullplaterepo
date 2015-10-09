@@ -19,6 +19,7 @@ gem 'money-rails'
 gem 'coffee-script'
 gem 'stripe'
 gem 'omniauth-facebook'
+gem 'normalize-rails'
 
 group :development, :test do
   gem 'binding_of_caller'
