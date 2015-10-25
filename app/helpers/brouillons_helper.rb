@@ -1,0 +1,2 @@
+module BrouillonsHelper
+end

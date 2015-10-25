@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'brouillons/un'
+
+  get 'brouillons/deux'
+
+  get 'brouillons/trois'
+
+  get 'brouillons/quatre'
+
+  get 'brouillons/cinq'
+
   get 'payments/new'
 
   # get 'orders/index'
