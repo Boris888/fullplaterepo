@@ -98,8 +98,8 @@ nav {
   width: 5rem;
   position: fixed;
   left: 0;
-  top: 0;
-  bottom: 0;
+  top: 32;
+  bottom: 132;
 }
 nav:after {
   content:'';
