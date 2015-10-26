@@ -96,8 +96,8 @@ dt {
 nav {
   background: #0D757D;
   width: 5rem;
-  position: absolute;
-  right: 0;
+  position: fixed;
+  left: 0;
   top: 0;
   bottom: 0;
 }
