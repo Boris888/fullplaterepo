@@ -12,11 +12,7 @@
   });
 </script>
 
-<br>
-<br>
-<br
-can><br>
-<br>
+
 <section>
 <input type="radio" id="profile" value="1" name="tractor" checked='checked' />
 <input type="radio" id="settings" value="2" name="tractor" />
@@ -26,22 +22,22 @@ can><br>
 
 
   <nav>
-  <label for="settings" class=''>Lundi</label>
-  <label for="posts" class=>Mardi</label>
-  <label for="books" class=>Mercredi</label>
-  <label for="profile" class=>Jeudi</label>
-   <label for="vendredi" class=>Vendredi</label>
+  <label for="settings" class='fontawesome-cogs'>Settings</label>
+  <label for="posts" class='fontawesome-folder-open'>Posts</label>
+  <label for="books" class='fontawesome-book'>Books</label>
+  <label for="profile" class='fontawesome-user'>Profile</label>
+   <label for="vendredi" class='fontawesome-user'>Profile</label>
   </nav>
 
-  <article class='uno'>
+  <article class='uno fontawesome-umbrella'>
     <h2>
-      <img alt=''  src='../assets/crudité.jpg' />
+      <img alt=''  src='https://lh3.googleusercontent.com/-wy4VbKjl-28/UXVqrCC_cCI/AAAAAAAAGi0/JZZvb9IaLCc/s550-no/K-bg-2.jpg' />
       KsesoCss
       <span>Spanish Css blog</span></h2>
    <footer>
     <ul>
-      <li class=''></li>
-      <li class=''></li>
+      <li class='fontawesome-hand-right'></li>
+      <li class='fontawesome-beer'></li>
       <li class='fontawesome-coffee'></li>
       <li class='fontawesome-hand-left'></li>
     </ul>

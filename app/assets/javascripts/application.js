@@ -16,5 +16,6 @@
 
 
 //= require bootstrap-sprockets
+//= require navbarbootsnip
 //= require_tree .
 
