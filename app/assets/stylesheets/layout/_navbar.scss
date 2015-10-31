@@ -139,7 +139,8 @@ footer {
 }
 
 .navbar-container {
-    padding: 20px 0 20px 0;
+    padding: 12px 0 20px 0;
+    background-color: blue
 }
 
 .navbar.navbar-fixed-top.fixed-theme {
@@ -150,10 +151,12 @@ footer {
 
 .navbar-brand.fixed-theme {
     font-size: 18px;
+
 }
 
 .navbar-container.fixed-theme {
     padding: 0;
+
 }
 
 .navbar-brand.fixed-theme,
@@ -176,10 +179,17 @@ footer {
         display: block;
         width: 160px;
         text-align: center;
-        background-color: #eee;
+        background-color: yellow;
     }
     .navbar>.container .navbar-brand-centered,
     .navbar>.container-fluid .navbar-brand-centered {
         margin-left: -80px;
     }
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    background-color: red;
+
 }

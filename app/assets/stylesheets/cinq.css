@@ -23,7 +23,8 @@ section {
   min-width: 390px;
   height: 39rem;
   margin: 2rem auto;
-  padding-right: 80rem;
+  padding-right: 85rem;
+  margin-left: 0px;
   box-shadow: 0 0 6px rgba(0,0,0,.4);
 }
 article {
