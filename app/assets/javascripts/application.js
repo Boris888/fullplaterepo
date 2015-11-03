@@ -1,3 +1,4 @@
+//= require cart
 //= cbpFWTabs
 //= require agency
 //= require classie
@@ -17,5 +18,6 @@
 
 //= require bootstrap-sprockets
 //= require navbarbootsnip
+//= require cart
 //= require_tree .
 

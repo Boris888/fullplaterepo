@@ -17,7 +17,7 @@
 }*/
 
 section {
-  background: transparent;
+  background: orange;
   width: 100%;
   /*max-width: 40rem;*/
   /*min-width: 390px;*/
@@ -211,16 +211,8 @@ a:hover {color: rgba(0,0,0,.2)}
   margin-left: -(half ot the image width)px
 }
 
-#grad {
-background: -webkit-linear-gradient(90deg, #B5AC49 10%, #3CA55C 90%); /* Chrome 10+, Saf5.1+ */
 
-  background:    -moz-linear-gradient(90deg, #3CA55C 10%, #B5AC49 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #3CA55C 10%, #B5AC49 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #3CA55C 10%, #B5AC49 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #3CA55C 10%, #B5AC49 90%); /* W3C */
-}
-
-.bkg {  background-image: url(../assets/étoile.jpg);}
+/*.bkg {  background-image: url(../assets/étoile.jpg);}*/
 
 .punchline {
 
