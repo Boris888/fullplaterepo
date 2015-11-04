@@ -14,19 +14,19 @@
   font-family: dosis, sans-serif;
   font-weight: 300;
   color: #fff;
-}*/
-
-section {
+}
+*/
+.menu {
   background: orange;
   width: 100%;
-  /*max-width: 40rem;*/
-  /*min-width: 390px;*/
+
   height: 39rem;
-  /*margin: 2rem auto;*/
-  /*padding-right: 85rem;*/
+
   margin-left: 0px;
   box-shadow: 0 0 6px rgba(0,0,0,.4);
 }
+
+
 article {
   height: 100%;
   position: absolute;
@@ -39,6 +39,7 @@ article {
   transform-origin: 0% 0%;
   transition-delay: .1s;
 }
+
 article:before {
   color: rgba(255,255,255,.45);
   font-size: 4rem;
@@ -47,6 +48,7 @@ article:before {
   top: 1rem;
   left: 1rem;
 }
+
 h2 {
   font-size: 2.5rem;
   font-weight: 600;
@@ -54,13 +56,15 @@ h2 {
   text-align: center;
   color: rgba(0,0,0,.7);
 }
+
+
 h2 img {
   width: 620px;
   height: auto;
   background: #f9f9f9;
- /* border: 5px solid rgba(0,0,0,.5);
-  border-radius: 50%;
-  padding: 5px;*/
+  /*border: 5px solid rgba(0,0,0,.5);*/
+  /*border-radius: 50%;*/
+  /*padding: 5px;*/
   display: block;
   margin: 2rem auto 0;
   box-shadow: 0 0 7px rgba(0,0,0,.5);
