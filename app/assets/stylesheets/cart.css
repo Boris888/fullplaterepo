@@ -69,10 +69,10 @@ a:hover {
   vertical-align: middle;
 }
 
-.container {
+.containercart {
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
-  width: 980px;
+  width: 237px;
 }
 
 #cart {
@@ -104,9 +104,9 @@ a:hover {
 }
 
 .product {
-  border: 1px solid #eee;
-  margin: 20px 0;
-  width: 100%;
+  /*border: 1px solid #eee;*/
+  margin: -78px 0;
+  width: 90%;
   height: 195px;
   position: relative;
 
@@ -135,8 +135,8 @@ a:hover {
   overflow: hidden;
   padding: 0;
   position: relative;
-  width: 24%;
-  height: 195px;
+  width: 12%;
+  height: 97px;
 }
 
 .product header:hover img {
@@ -188,8 +188,9 @@ a:hover {
 
 .product footer.content {
   height: 50px;
-  margin: 6px 0 0 0;
+  margin: 0px 0 0 0;
   padding: 0;
+  width: 18%;
 }
 
 .product footer .price {
@@ -200,7 +201,8 @@ a:hover {
   font-weight: 300;
   line-height: 49px;
   margin: 0;
-  padding: 0 30px;
+  padding: 0 5.5px;
+  height: 95%;
 }
 
 .product footer .full-price {
@@ -218,6 +220,7 @@ a:hover {
   -ms-transition: margin .15s linear;
   -o-transition: margin .15s linear;
   transition: margin .15s linear;
+  height: 95%;
 }
 
 .qt, .qt-plus, .qt-minus {
@@ -228,7 +231,7 @@ a:hover {
 .qt {
   font-size: 19px;
   line-height: 50px;
-  width: 70px;
+  width: 77px;
   text-align: center;
 }
 
@@ -244,6 +247,7 @@ a:hover {
   -ms-transition: background .2s linear;
   -o-transition: background .2s linear;
   transition: background .2s linear;
+  width: 29%;
 }
 
 .qt-plus:hover, .qt-minus:hover {
@@ -261,11 +265,13 @@ a:hover {
 }
 
 #site-footer {
-  margin: 30px 0 0 0;
+  margin: -40px 0 0 0;
 }
 
 #site-footer {
-  padding: 40px;
+  padding: 8px;
+  width: 177%;
+  margin-left: 21%;
 }
 
 #site-footer h1 {
