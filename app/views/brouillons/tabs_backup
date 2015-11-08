@@ -1,0 +1,97 @@
+<%= stylesheet_link_tag "cinq" %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.scrollTo').click( function() { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 750; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+    });
+  });
+</script>
+
+
+<section>
+<input type="radio" id="profile" value="1" name="tractor" checked='checked' />
+<input type="radio" id="settings" value="2" name="tractor" />
+<input type="radio" id="posts" value="3" name="tractor" />
+<input type="radio" id="books" value="4" name="tractor" />
+  <input type="radio" id="vendredi" value="5" name="tractor" />
+
+
+  <nav>
+  <label for="settings" class='fontawesome-cogs'>Settings</label>
+  <label for="posts" class='fontawesome-folder-open'>Posts</label>
+  <label for="books" class='fontawesome-book'>Books</label>
+  <label for="profile" class='fontawesome-user'>Profile</label>
+   <label for="vendredi" class='fontawesome-user'>Profile</label>
+  </nav>
+
+  <article class='uno fontawesome-umbrella'>
+    <h2>
+      <img alt=''  src='https://lh3.googleusercontent.com/-wy4VbKjl-28/UXVqrCC_cCI/AAAAAAAAGi0/JZZvb9IaLCc/s550-no/K-bg-2.jpg' />
+      KsesoCss
+      <span>Spanish Css blog</span></h2>
+   <footer>
+    <ul>
+      <li class='fontawesome-hand-right'></li>
+      <li class='fontawesome-beer'></li>
+      <li class='fontawesome-coffee'></li>
+      <li class='fontawesome-hand-left'></li>
+    </ul>
+   </footer>
+  </article>
+
+  <article class='dos fontawesome-wrench'>
+    <p>Si hay algún fenómeno en la web que sea lo más parecido a las setas eso son los blogs, cursos y enseñanzas web. Todo lo relativo a la divulgación, de cualquier materia o parcela del conocimiento humano, angelical o mefistofélico, tiene su oferta, sus "maestros" y sus cocinillas visionarios.</p>
+  </article>
+
+  <article class='tres fontawesome-file-alt'>
+    <ol>
+      <li>Dimensionado de imágenes y objetos en CSS</li>
+      <li>Evita pulsaciones no deseadas al hacer scroll</li>
+      <li>¿Qué es CSS?</li>
+      <li>CSS Style Attributes. La especificación</li>
+      <li>Múltiples labels por cada input </li>
+      <li>Sintaxis de Css y Glosario de términos</li>
+    </ol>
+  </article>
+
+  <article class='cuatro fontawesome-copy'>
+    <dl>
+      <dt>Guía de Transiciones Css</dt>
+      <dd>Todas y cada una de las propiedades css que componen el grupo de las transitions con demos.</dd>
+      <dt>@Font-face y sus problemas</dt>
+      <dd>Los problemas más comunes y sus soluciones, que suelen presentarse al utilizar la regla @font-face de Css para mostrar los textos en tipografías distintas a las safety fonts.</dd>
+    </dl>
+  </article>
+
+
+  <article class='cinqo fontawesome-copy'>
+    <dl>
+      <dt>Guía de Transiciones Css</dt>
+      <dd>Todas y cada una de las propiedades css que componen el grupo de las transitions con demos.</dd>
+      <dt>@Font-face y sus problemas</dt>
+      <dd>Los problemas más comunes y sus soluciones, que suelen presentarse al utilizar la regla @font-face de Css para mostrar los textos en tipografías distintas a las safety fonts.</dd>
+    </dl>
+  </article>
+</section>
+
+<ul class="menu">
+  <li><a class="scrollTo" href="#page-1">Page1</a></li>
+  <li><a class="scrollTo" href="#page-2">Page 2</a></li>
+</ul>
+
+<div id="page-1">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptatibus tempore blanditiis sunt laudantium accusamus expedita consequatur nulla et dolore modi rerum, officiis, tenetur nemo molestias veniam non. Ex, omnis.
+  <!-- Contenu Page 1 -->
+</div><!-- /page-1 -->
+<br>
+<br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br>
+<div id="page-2">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea laudantium facere quibusdam dolore dolor iure reprehenderit excepturi molestias fugiat ad impedit delectus nulla ipsam, consectetur. Fugit tempore itaque et sequi?<!-- Contenu Page 2 -->
+</div><!-- /page-2 -->
+

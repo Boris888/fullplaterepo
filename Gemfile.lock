@@ -54,6 +54,9 @@ GEM
     byebug (5.0.0)
       columnize (= 0.9.0)
     coderay (1.1.0)
+    coffee-rails (4.1.0)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0, < 5.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -100,6 +103,7 @@ GEM
     mime-types (2.6.2)
     mini_portile (0.6.2)
     minitest (5.8.0)
+    modernizr-rails (2.7.1)
     monetize (1.1.0)
       money (~> 6.5.0)
     money (6.5.1)
@@ -115,6 +119,7 @@ GEM
     netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    normalize-rails (3.0.3)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -206,6 +211,8 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.1)
+    turbolinks (2.5.3)
+      coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.2)
@@ -231,7 +238,9 @@ DEPENDENCIES
   font-awesome-sass
   jbuilder (~> 2.0)
   jquery-rails
+  modernizr-rails
   money-rails
+  normalize-rails
   omniauth-facebook
   pg
   pry-byebug
@@ -244,6 +253,7 @@ DEPENDENCIES
   simple_form
   spring
   stripe
+  turbolinks
   uglifier
 
 BUNDLED WITH

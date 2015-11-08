@@ -20,6 +20,10 @@ gem 'coffee-script'
 gem 'stripe'
 gem 'omniauth-facebook'
 
+gem 'normalize-rails'
+gem 'modernizr-rails'
+gem 'turbolinks'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
