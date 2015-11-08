@@ -115,6 +115,7 @@ a:hover {
   -ms-transition: margin .2s linear, opacity .2s linear;
   -o-transition: margin .2s linear, opacity .2s linear;
   transition: margin .2s linear, opacity .2s linear;
+  margin-left: 18px;
 }
 
 .product img {
@@ -154,8 +155,8 @@ a:hover {
   font-weight: 300;
   line-height: 49px;
   margin: 0;
-  padding: 0 30px;
-  position: absolute;
+  padding: 0 21px;
+  /*position: absolute;*/
   bottom: -50px;
   right: 0;
   left: 0;
@@ -265,13 +266,13 @@ a:hover {
 }
 
 #site-footer {
-  margin: -40px 0 0 0;
+  margin: -8px 0 0 0;
 }
 
 #site-footer {
   padding: 8px;
-  width: 177%;
-  margin-left: 21%;
+  width: 188%;
+  margin-left: 20%;
 }
 
 #site-footer h1 {
@@ -292,9 +293,9 @@ a:hover {
 }
 
 #site-footer h3 {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 300;
-  margin: 15px 0;
+  margin: 4px 0;
 }
 
 .left {
@@ -315,7 +316,7 @@ a:hover {
   font-size: 20px;
   font-weight: 300;
   padding: 16px 0;
-  width: 290px;
+  width: 280.5px;
   text-align: center;
 
   -webkit-transition: all .2s linear;
@@ -376,4 +377,8 @@ a:hover {
 height: 44px;
 
 border: 1px rgb(89,89,89) solid;
+}
+
+.total {
+    display: block;
 }

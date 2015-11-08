@@ -1,6 +1,7 @@
 # Be sure to restart your server when you modify this file.
 Rails.application.config.assets.precompile += %w( cinq.css )
 Rails.application.config.assets.precompile += %w( cart.css )
+# Rails.application.config.assets.precompile += %w( bouton_spécial.css )
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
