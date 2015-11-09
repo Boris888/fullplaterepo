@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'meals/index'
+
+  get 'meals/show'
+
+  get 'meals/new'
+
+  get 'meals/create'
+
+  get 'meals/edit'
+
+  get 'meals/update'
+
+  get 'meals/destroy'
+
   get 'brouillons/un'
 
   get 'brouillons/deux'
