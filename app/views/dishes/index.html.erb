@@ -9,3 +9,15 @@
   <% end %>
 </ul>
 <%= link_to "Pré-commander", brouillons_quatre_path %>
+
+
+
+
+<h1>dishes</h1>
+<ul>
+  <% @dishes.each do |dish| %>
+    <li><%= link_to dish.name, dish_path(dish) %></li>
+  <% end %>
+</ul>
+
+
