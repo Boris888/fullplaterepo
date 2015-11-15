@@ -59,6 +59,12 @@ resources :orders, only: [:show, :create] do
   # get 'dishes/destroy'
   root 'dishes#index'
   resources :dishes, only: [:index, :show]
+  # get 'dishes/index' => "dishes#sum_price"
+
+  get 'dishes/index' => "dishes#rr"
+
+  get 'testcart' => "dishes#testcart"
+  get 'testcartid' => "dishes#testcartid"
 
   resources :articles
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }

@@ -1,7 +1,13 @@
 class DishesController < ApplicationController
   def index
     @dishes = Dish.all
+    @rr = "hello"
+
   end
+
+  # def rr
+  #   puts "Salut, commen ça va ????!!!!"
+  # end
 
   def show
     @dish = Dish.find(params[:id])
@@ -21,4 +27,14 @@ class DishesController < ApplicationController
 
   def destroy
   end
+
+  def testcart
+    @dishes = Dish.all
+    @rr = "hello"
+  end
+
+  def testcartid
+  end
+
+
 end

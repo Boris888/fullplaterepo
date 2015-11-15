@@ -1,0 +1,3 @@
+<%= form_tag { controller: 'customers', action: 'mark_all_items_paid', id: @customer }, { method: :post } do -%>
+  <%= submit_tag "Mark All Items Paid" %>
+<% end -%>
