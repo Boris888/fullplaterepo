@@ -43,7 +43,9 @@ resources :orders, only: [:show, :create] do
   resources :payments, only: [:new, :create]
   end
 
-  resources :restaurants, only: [ :index, :show ]
+  resources :restaurants, only: [ :index, :show ] do
+    resources :reviews, only: [ :create, :destroy ]
+  end
 
 
   # get 'dishes/index'
