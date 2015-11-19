@@ -1,5 +1,9 @@
 <%= simple_form_for([ restaurant, review ]) do |form| %>
-  <%= form.input :content, :value => 'hello' %>
+
+
+  <%= form.input :test, :input_html => { :value => 'teeeest' } %>
+  <%= form.input :price %>
+
 <%= form.input :content, :input_html => { :value => 'user@domain.com' } %>
 
   <%= form.button :submit %>
