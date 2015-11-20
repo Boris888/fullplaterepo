@@ -318,6 +318,7 @@ a:hover {
   padding: 16px 0;
   width: 280.5px;
   text-align: center;
+  /*margin-left: 447px;*/
 
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
