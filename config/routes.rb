@@ -62,7 +62,7 @@ resources :orders, only: [:show, :create] do
 
   # get 'dishes/destroy'
   root 'dishes#index'
-  resources :dishes, only: [:index, :show]
+  resources :dishes, only: [:index, :show, :new, :create]
   # get 'dishes/index' => "dishes#sum_price"
 
   get 'dishes/index' => "dishes#rr"
