@@ -171,7 +171,12 @@
 
   <article class='cinqo'>
     <img src='../assets/planet-maki.jpg' class="center-block img-responsive" height="427" style="max-width: 640px">
+
+ <%= render 'reviews/formsushis', restaurant: @restaurant, review: @review %>
   </article>
+
+
+
 </section>
 
 
@@ -276,12 +281,44 @@
 
 
 
+
 <p>saaaaaluuuuuut</p>
 
 
+<form action="/articles" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_VoZ9VBr87ly4d4whlwur0aDV"
+    data-image="/img/documentation/checkout/marketplace.png"
+    data-name="Cybille"
+    data-description="2 widgets"
+    data-currency="eur"
+    data-amount="2000"
+    data-locale="auto">
+  </script>
+</form>
 
 
 
+<h1>Payments#new</h1>
+<p>Find me in app/views/payments/new.html.erb</p>
+
+<h1>Purchase of dish </h1>
+<%= form_tag order_payments_path(@order) do %>
+  <article>
+    <label class="amount">
+      <span>Amount: <%= humanized_money_with_symbol(@order.amount) %></span>
+    </label>
+  </article>
+
+ <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+    data-name="My Dish!!!!!"
+    data-description="P"
+    data-amount="<%= 2300 %>"
+    data-currency="EUR"></script>
+
+<% end %>
 
 
 <br>
