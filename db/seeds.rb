@@ -23,3 +23,13 @@ restaurant = Restaurant.create!({
 })
 puts "Created  #{restaurant.name}"
 
+
+# Review.create!(
+#  id: 101,
+#  content: "test dans la seed",
+#  restaurant_id: 1,
+
+#  fieldname: nil,
+#  price: 777,
+#  newprice: nil,
+#  test: nil)
