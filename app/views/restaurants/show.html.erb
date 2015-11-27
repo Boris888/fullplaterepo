@@ -1,0 +1,346 @@
+<%= stylesheet_link_tag "cinq" %>
+<%= stylesheet_link_tag "cart" %>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.scrollTo').click( function() { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 750; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+    });
+  });
+</script>
+
+<span>rrrsrsnsnnrsnsnssn</span>
+<body class="bkg">
+
+<br>
+<br>
+<br><br>
+<br>
+<section>
+<input type="radio" id="profile" value="1" name="tractor" checked='checked' />
+<input type="radio" id="settings" value="2" name="tractor" />
+<input type="radio" id="posts" value="3" name="tractor" />
+<input type="radio" id="books" value="4" name="tractor" />
+  <input type="radio" id="vendredi" value="5" name="tractor" />
+
+
+
+
+
+  <nav>
+  <label for="settings" class=''>Lundi</label>
+  <label for="posts" class=>Mardi</label>
+  <label for="books" class=>Mercredi</label>
+  <label for="profile" class=>Jeudi</label>
+   <label for="vendredi" class=>Vendredi</label>
+  </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 pull-left" style="position:relative; z-index:3; width: 17%">
+
+
+<div id="reviews">
+  <% if @restaurant.reviews.blank? %>
+    Be the first to leave a review for <%= @restaurant.name %>
+  <% else %>
+
+  <div class="container">
+  <div class="row">
+    <br> <br>
+    <div class="col-md-6 col-md-offset-3" >
+    <% @restaurant.reviews.each do |review| %>
+      <%= render 'reviews/show', review: review %>
+    <% end %>
+
+  <footer id="site-footer">
+    <div class="containercart clearfix ">
+
+      <div class="left">
+        <!-- <h2 class="subtotal">Subtotal: <span>163.96</span>€</h2> -->
+        <!-- <h3 class="tax">Taxes (5%): <span>8.2</span>€</h3> -->
+        <h3 class="shipping">Shipping: <span>5.00</span>€</h3>
+      </div>
+
+      <div class="right">
+        <h1 class="total ">Total: <span>  177.16    </span>€€</h1>
+        <a class="btn">Checkout</a>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <% end %>
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <article class='uno'>
+    <h2>
+      <!-- <img src='../assets/crudité.jpg' class="center-block img-responsive"/> -->
+     <!--  <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-md-offset-3 img-responsive "> -->
+      <img alt=''  src='../assets/crudité.jpg'  />
+        <!--   </div>
+        </div>
+      </div> -->
+<!-- <button type="button" class="btn btn-warning">Ajouter au panier</button> -->
+<!-- <%= link_to "Ajouter au panier", brouillons_un_path %> -->
+
+<br>
+
+
+<% somevalue = 33 %>
+
+<div class="container">
+  <div class="row">
+
+<%= simple_form_for([ @restaurant, @review ]) do |form| %>
+<%= form.input :content, :as => :hidden, :input_html => { :value => 'user@domain.com' } %>
+<%= form.input :price, :as => :hidden, :input_html => { :value => 77 } %>
+
+  <%= form.button :submit, :value => 'Ajouter au panier' %>
+<% end %>
+
+  </div>
+</div>
+
+
+
+      <span>Spanish Css blog</span></h2>
+ <!--   <footer>
+    <ul>
+      <li class=''></li>
+      <li class=''></li>
+      <li class='fontawesome-coffee'></li>
+      <li class='fontawesome-hand-left'></li>
+    </ul>
+   </footer> -->
+  </article>
+
+
+
+
+
+  <article class='dos '>
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+ -->
+ <br>
+<img src='../assets/lucien.jpg' class="center-block img-responsive" height="427" style="max-width: 640px">
+
+
+
+
+<!--     </div>
+  </div>
+</div> -->
+
+
+  </article>
+
+  <article class='tres '>
+    <img src='../assets/chèvre et miel.jpg' class="center-block img-responsive" height="427" style="max-width: 640px">
+  </article>
+
+  <article class='cuatro'>
+<!-- <img src='../assets/burritos.jpg' class="center-block img-responsive" /> -->
+
+<img src='../assets/burritos.jpg' class="center-block img-responsive" height="427" style="max-width: 640px">
+    <dl>
+      <dt>Guía de Transiciones Css</dt>
+      <dd>Todas y cada una de las propiedades css que componen el grupo de las transitions con demos.
+    </dl>
+  </article>
+
+
+  <article class='cinqo'>
+    <img src='../assets/planet-maki.jpg' class="center-block img-responsive" height="427" style="max-width: 640px">
+
+ <%= render 'reviews/formsushis', restaurant: @restaurant, review: @review %>
+  </article>
+</section>
+
+ <h1 class="total ">Total: <span>kxyky</span>€</h1>
+
+
+<% @restaurant.reviews.each do |review| %>
+
+<li><%= review.price %></li>
+    <% end %>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+
+<h1><%= @restaurant.name %></h1>
+<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=400x300&sensor=false&maptype=roadmap&markers=color:red|#{@restaurant.address}" %>
+<h2>
+  <%= pluralize @restaurant.reviews.size, "review" %>
+</h2>
+
+
+<div id="reviews">
+  <% if @restaurant.reviews.blank? %>
+    Be the first to leave a review for <%= @restaurant.name %>
+  <% else %>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3" style="width: 1%">
+    <% @restaurant.reviews.each do |review| %>
+      <%= render 'reviews/show', review: review %>
+    <% end %>
+
+  <footer id="site-footer">
+    <div class="containercart clearfix">
+
+      <div class="left">
+        <!-- <h2 class="subtotal">Subtotal: <span>163.96</span>€</h2> -->
+        <h3 class="tax">Taxes (5%): <span>8.2</span>€</h3>
+        <h3 class="shipping">Shipping: <span>5.00</span>€</h3>
+      </div>
+
+      <div class="right">
+        <h1 class="total ">Total: <span>177.16</span>€</h1>
+        <a class="btn">Checkout</a>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <% end %>
+</div>
+
+
+
+
+<%= render 'reviews/form', restaurant: @restaurant, review: @review %>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="menu">
+  <li><a class="scrollTo" href="#page-1">Page1</a></li>
+  <li><a class="scrollTo" href="#page-2">Page 2</a></li>
+</ul>
+
+<div id="page-1">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptatibus tempore blanditiis sunt laudantium accusamus expedita consequatur nulla et dolore modi rerum, officiis, tenetur nemo molestias veniam non. Ex, omnis.
+  <!-- Contenu Page 1 -->
+</div><!-- /page-1 -->
+
+
+
+
+
+
+<%= simple_form_for([ @restaurant, @review ]) do |form| %>
+
+<%= form.input :content, :as => :hidden, :input_html => { :value => 'OOPOOP' } %>
+<%= form.input :price, :as => :hidden, :input_html => { :value => 22 } %>
+
+  <%= form.button :submit, :value => 'sushis' %>
+<% end %>
+
+
+<p>saaaaaluuuuuut</p>
+
+
+
+
+<p>saaaaaluuuuuut</p>
+
+
+<form action="/articles" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_VoZ9VBr87ly4d4whlwur0aDV"
+    data-image="/img/documentation/checkout/marketplace.png"
+    data-name="Cybille"
+    data-description="2 widgets"
+    data-currency="eur"
+    data-amount="2000"
+    data-locale="auto">
+  </script>
+</form>
+
+
+<%= form_tag articles_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    <label class="amount">
+      <span>Amount: $5.00</span>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A month's subscription"
+          data-amount="500"
+          data-locale="auto"></script>
+<% end %>
+
+
+
+
+<br>
+<br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br>
+
+
+<div id="page-2">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea laudantium facere quibusdam dolore dolor iure reprehenderit excepturi molestias fugiat ad impedit delectus nulla ipsam, consectetur. Fugit tempore itaque et sequi?<!-- Contenu Page 2 -->
+</div><!-- /page-2 -->
+
+
+
+</body>

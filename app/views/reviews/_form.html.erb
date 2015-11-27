@@ -1,0 +1,12 @@
+<%= simple_form_for([ restaurant, review ], remote: true) do |form| %>
+
+
+
+<%= form.input :content, :as => :hidden, :input_html => { :value => 'user@domain.com' } %>
+<%= form.input :price, :as => :hidden, :input_html => { :value => 77 } %>
+
+
+
+  <%= form.button :submit %>
+<% end %>
+

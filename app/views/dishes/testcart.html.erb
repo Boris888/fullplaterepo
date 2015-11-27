@@ -1,6 +1,9 @@
-<h1>Dishes#indezzzzzzzz</h1>
-<p>salut</p>
-<p>Find me in app/views/dishes/index.html.erb</p>
+<br>
+<br>
+<br>
+
+
+<h1>TeST CAAArtT</h1>
 
 <h1>dishes</h1>
 <ul>
@@ -11,17 +14,19 @@
 <%= link_to "Pré-commander", brouillons_quatre_path %>
 
 
-
-
 <h1>dishes</h1>
 <ul>
   <% @dishes.each do |dish| %>
-    <li><%= link_to dish.name, dishes_path %> <%= link_to dish.price_cents/100 %></li>
+    <li>
+    <%= link_to dish.name, testcartid_path(dish) %> <%= link_to dish.price_cents/100 %>
     <%= button_to "Compare Excel", :action => "rr" %>
+    <%= link_to "Ajouter au panier", dishes_path %>
+    <br><br>
+    </li>
 
   <% end %>
 </ul>
 
 
-<%= link_to "créer un dish", new_dish_path %>
 
+<%= @rr %>

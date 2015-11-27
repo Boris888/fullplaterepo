@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'meals/index'
+
+  get 'meals/show'
+
+  get 'meals/new'
+
+  get 'meals/create'
+
+  get 'meals/edit'
+
+  get 'meals/update'
+
+  get 'meals/destroy'
+
   get 'brouillons/un'
 
   get 'brouillons/deux'
@@ -29,6 +43,10 @@ resources :orders, only: [:show, :create] do
   resources :payments, only: [:new, :create]
   end
 
+  resources :restaurants, only: [ :index, :show ] do
+    resources :reviews, only: [ :create, :destroy ]
+  end
+
 
   # get 'dishes/index'
 
@@ -44,7 +62,13 @@ resources :orders, only: [:show, :create] do
 
   # get 'dishes/destroy'
   root 'dishes#index'
-  resources :dishes, only: [:index, :show]
+  resources :dishes, only: [:index, :show, :new, :create]
+  # get 'dishes/index' => "dishes#sum_price"
+
+  get 'dishes/index' => "dishes#rr"
+
+  get 'testcart' => "dishes#testcart"
+  get 'testcartid' => "dishes#testcartid"
 
   resources :articles
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
