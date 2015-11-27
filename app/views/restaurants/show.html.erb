@@ -187,6 +187,10 @@
  <h1 class="total ">Total: <span>kxyky</span>€</h1>
 
 
+<% @restaurant.reviews.each do |review| %>
+
+<li><%= review.price %></li>
+    <% end %>
 
 
 <div class="container">
